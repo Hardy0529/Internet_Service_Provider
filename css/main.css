@@ -9693,7 +9693,7 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
 /* $Bg */
 /*-------------------------*/
 .bg {
-  z-index: -2;
+  z-index: -5;
   position: fixed;
   top: 0px;
   left: 0px;
