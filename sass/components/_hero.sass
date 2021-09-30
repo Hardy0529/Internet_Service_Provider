@@ -1,0 +1,181 @@
+/*-------------------------*/
+/* hero
+/*-------------------------*/
+section
+	&.block-hero
+		overflow: hidden
+		color: #043959
+		background: #fff
+		text-align: center
+		
+		.block-hero-images 
+			width: 100%
+			max-width: 1440px
+			margin: 10rem auto 0 auto
+			margin-top: calc(10rem - 40px)
+			padding: 0 calc(40px*1.0) 0 22px
+			grid-gap: 0
+			align-items: center
+			@media (max-width: 960px)
+				padding: 0 calc(40px*1.0) 0 22px
+			@media (max-width: 660px)
+				padding: 0 calc(40px*1.0) 0 calc(22px*0.5)
+			@media (max-width: 480px)
+				 padding: 0 calc(22px*0.35) 0 calc(22px*0.35)
+				 margin: 6rem auto 0 auto
+			
+section
+	&.block-hero 
+		.grid
+			display: grid
+			grid-template-columns: repeat(7,1fr)
+		.block-hero-images 
+			z-index: 1
+			// border: 1px solid red
+			.lpc-picture
+				.lpc-picture-wrapper
+					border: 1px solid #117ac9
+					border-radius: 8px
+					@media (max-width: 660px)
+						border-radius: calc(8px*0.5)
+					.lpc-picture-container
+						position: relative
+						.lpc-picture-fill
+							position: relative
+							box-shadow: 4px 4px 20px $color_dark-grey
+						.lpc-picture-fill
+							position: absolute
+							top: 0
+							bottom: 0
+							left: 0
+							right: 0
+							background-color: rgba(0,0,0,.1)
+							overflow: hidden
+							img.lpc-image
+								width: 100%
+								display: inline
+				&:nth-child(1)	
+					text-align: left
+					grid-column-start: 1
+					grid-column-end: 3
+					padding-right: calc(40px*2.0)
+					// border: 1px solid red
+					@media (max-width: 960px)
+						padding-right: calc(40px*1.0)
+					@media (max-width: 480px)
+						 padding-right: calc(22px*0.75)
+						
+				&:nth-child(2) 
+					text-align: center
+					grid-column-start: 3
+					grid-column-end: 7
+					padding-right: 40px
+					@media (max-width: 960px)
+						padding-right: calc(40px*0.5)
+					@media (max-width: 480px)
+						 padding-right: 0
+					&:after 
+						display: block
+						position: relative
+						top: -1px
+						content: ""
+						width: 120%
+						transform: translateX(-8.33%)
+						height: 16px
+						border: 1px solid #117ac9
+						border-radius: 8px 8px 30px 30px
+						@media (max-width: 480px)
+							height: 8px
+
+				&:nth-child(3) 
+					text-align: right
+					grid-column-start: 7
+					grid-column-end: 8
+					padding-left: 40px
+					// border: 1px solid red
+					@media (max-width: 960px)
+						padding-left: calc(40px*0.5)
+					@media (max-width: 480px)
+						padding-left: calc(22px*0.75)
+
+				&:nth-child(1)		
+					.lpc-picture-wrapper
+						padding: 19px 0
+						@media (max-width: 660px)
+							padding: calc(19px*0.5) 0
+						@media (max-width: 480px)
+							padding: calc(19px*0.35) 0
+					.lpc-picture-ratio
+						padding: 109.2985% 0 0
+						
+				&:nth-child(2) 
+					.lpc-picture-wrapper 
+						padding: 19px 22px
+						@media (max-width: 660px)
+							padding: calc(19px*0.5) calc(22px*0.5)
+						@media (max-width: 480px)
+							padding: calc(19px*0.25) calc(22px*0.25)
+					.lpc-picture-ratio
+						padding: 70.122% 0 0 
+				&:nth-child(3) 
+					.lpc-picture-wrapper
+						padding: 19px 0
+						@media (max-width: 660px)
+							padding: calc(19px*0.5) 0
+						@media (max-width: 480px)
+							padding: calc(19px*0.25) 0
+					.lpc-picture-ratio
+						padding: 182.517% 0 0
+			
+				
+						
+section
+	&.block-hero 
+		.block-hero-closing 
+			max-width: none
+			margin-top: -18.5vw
+			padding: calc(18.5vw + 10rem) 0 10rem 0
+			background: #eff3f7
+			@media (max-width: 480px)
+				padding: calc(18.5vw + 5rem) 0 calc(15rem/2.0) 0
+				text-align: left
+			.lpc-titles:not(:first-child)
+  				margin-top: 3rem
+			.block-hero-closing-all-on 
+    			display: inline-block
+			h2
+				margin: 0px
+				font-size: 40px
+				line-height: 55px
+				letter-spacing: 0
+				@media (max-width: 960px)
+					line-height: 125%
+					font-size: 5vw
+				@media (max-width: 480px)
+					font-size: 10vw
+					line-height: 125%
+					padding: 1rem
+				span
+					display: inline
+					@media (max-width: 480px)
+						display: block
+					&:last-child
+						display: block
+			h6
+				margin: 0px
+				font-weight: 500
+				font-family: Recoleta,Georgia,"Times New Roman",Times,serif
+				font-size: 24px
+				line-height: 32px
+				letter-spacing: 0
+				line-height: 100%
+				@media (max-width: 480px)
+					text-align: left
+					padding: 1rem
+			.block-hero-closing-wpcom-logo 
+				display: inline-block
+				position: relative
+				bottom: -.4rem
+				margin-left: 8px
+
+			

@@ -1,0 +1,213 @@
+/*-------------------------*/
+/* $Header
+/*-------------------------*/
+
+.header
+  // position: fixed
+  // top: 0
+  // left: 0
+  width: 100%
+  z-index: 100
+  transition: all 0.3s
+  background-color: #fefefe
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
+
+/* navbar 
+ *---------------------
+.navbar
+  width: 100%
+
+  .header_logo
+    padding: 15px 15px 10px 8px
+    float: left
+
+    @media (max-width: 960px)
+      padding: 10px 15px 0px 8px
+    a
+      display: block
+
+    .logo-demo
+      margin-top: 6px
+
+      @media (max-width: 960px)
+        margin-top: 0px
+
+  .nav
+    float: right
+
+.menu
+  margin: 0px
+  padding: 0px
+  list-style: none
+  float: left
+
+  > li
+    float: left
+
+    > a
+      display: block
+      line-height: 24px
+      padding: 28px 16px
+      margin-right: 4px
+      color: #1e2022
+      font-weight: 400
+
+      &:after
+        content: ""
+        position: absolute
+        width: 0%
+        height: 2px
+        background-color: #ff5e41
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        transition: all 0.3s
+
+      &.current:after
+        width: 100%
+
+    &:hover > a:after
+      width: 100%
+
+  .dropdown
+    margin: 0px
+    padding: 0px
+    list-style: none
+    position: absolute
+    left: 50%
+    top: 105%
+    transform: translateX(-50%)
+    background-color: rgb(72, 110, 153)
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s
+
+    > li > a
+      display: block
+      line-height: 24px
+      padding: 8px 24px
+      color: #fff
+      width: 200px
+      transition: all 0.2s
+
+      &:hover
+        background-color: #ff5e41
+
+  > li:hover .dropdown
+    opacity: 1
+    visibility: visible
+    top: 100%
+
+/* toggle
+
+.menu-toggle
+  float: right
+
+  @media (min-width: 961px)
+    display: none
+    padding: 16px 0px
+  a
+    margin-top: 1px
+    padding: 14px 14px
+    display: block
+/* popup-nav
+@media (max-width: 960px)
+  .popup-nav
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #fff
+    transition: all 0.3s
+
+  #overlay:target
+    opacity: 1
+    visibility: visible
+
+  .popup-nav
+    .menu
+      padding-top: 40px
+      width: 100%
+
+      > li
+        width: 100%
+
+        > a:after
+          display: none
+
+    .social-bar
+      width: 100%
+      text-align: center
+
+  /* popup-close
+
+  .popup-close
+    position: absolute
+    top: 0
+    right: 0
+    width: 56px
+    height: 56px
+    display: inline-block
+    padding: 12px
+    padding-top: 16px
+
+    span
+      height: 3px
+      width: 32px
+      background-color: black
+      position: absolute
+      top: 50%
+
+      &:nth-child(1)
+        transform: translateY(-50%) rotate(45deg)
+
+      &:nth-child(2)
+        transform: translateY(-50%) rotate(-45deg)
+
+  .menu
+
+    > li > a
+      padding: 16px
+      text-align: center
+
+    .dropdown
+      position: relative
+      left: 50%
+      top: 105%
+      transform: translateX(-50%)
+      background-color: #ccc
+      opacity: 1
+      visibility: visible
+      transition: all 0.3s
+
+      &:after
+        content: "+"
+        width: 24px
+        height: 24px
+        position: absolute
+        right: 0px
+        top: -56px
+        line-height: 24px
+        text-align: center
+        border: 1px solid rgb(45, 75, 110)
+        margin: 16px
+        background-color: rgb(72, 110, 153)
+        color: #fff
+
+      > li
+        border-bottom: 1px solid #eee
+
+        > a
+          display: block
+          line-height: 24px
+          padding: 8px 24px
+          color: #fff
+          width: 200px
+          transition: all 0.2s
+          width: 100%
+
+  .navbar__social-bar
+    padding: 4px 0px

@@ -1,0 +1,128 @@
+// utils
+@import ./helpers/_mixins
+@import ./helpers/_variables
+  
+
+// base
+@import ./base/_reset
+@import ./base/_icon
+@import ./base/_typography
+
+
+// layout
+@import ./layout/_grid
+
+
+// components
+@import ./components/_buttons
+@import ./components/_imgbox
+@import ./components/_form
+
+// @import ./components/_navigation
+@import ./components/_footer
+
+@import ./components/_swipeWrapper
+@import ./components/_parallax-scrolling
+@import ./components/_quote
+
+@import ./components/_jumbotron
+@import ./components/_hero
+
+@import ./components/_plans
+@import ./components/_info
+@import ./components/_work
+@import ./components/_choose
+@import ./components/_service
+@import ./components/_serviceWrap
+@import ./components/_ay_showcase
+@import ./components/_ay-team
+@import ./components/_contact
+
+
+/*-------------------------*/
+/* $Globel
+/*-------------------------*/
+.wrapper
+	overflow: hidden
+
+
+
+/*-------------------------*/
+/* $Grid
+/*-------------------------*/
+.custom-width
+  padding-left: 20px
+  padding-right: 20px
+  @media screen and (min-width: 761px)
+    padding-left: 25px
+    padding-right: 25px
+  @media screen and (min-width: 1121px)
+    padding-left: calc(0.1975 * 100vw - 196.2px)
+    padding-right: calc(0.1975 * 100vw - 196.2px)
+
+
+
+.container-info
+	max-width: 1248px
+	margin: 0 auto
+	@media screen and (max-width: 1023px)
+		width: 89.33333%
+	@media screen and (min-width: 1024px)
+		width: 86.66667%
+
+.info-inner
+	@media screen and (min-width: 769px)
+		justify-content: space-between
+		display: flex
+	@media screen and (max-width: 1023px) and (min-width: 769px)
+		margin-left: -60px
+	@media screen and (min-width: 1024px)
+		margin-left: -100px
+
+.info-section
+	position: relative
+	@media screen and (max-width: 1023px) and (min-width: 769px)
+		margin-left: 60px
+		width: calc(100%/3 - 60px)
+	@media screen and (min-width: 1024px)
+		margin-left: 100px
+		width: calc(100%/3 - 100px)
+
+
+
+/*-------------------------*/
+/* $Bg
+/*-------------------------*/
+	
+.bg
+	z-index: -5
+	position: fixed  
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background-size: cover
+	background-image: url(../assets/urban-long-exposure-night.jpg)
+	background-position: center
+
+	&:before 
+		background-image: linear-gradient(90deg,#1d232f 0%,#1a1a1a 100%)
+		background-repeat: repeat-y
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		content: ""
+		opacity: .8
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+
+/*-------------------------*/
+/* $Ay-showcase 
+/*-------------------------*/
+.ay-showcase 
+	background: #fff
+	padding-top: 80px
+	padding-bottom: 80px
+	@media (max-width: 768px)
+		padding-top: 40px
+		padding-bottom: 40px
+	*
+		line-height: calc(2ex + 14px)
+	
+
+	
+    	
+	.ay-offer-item-wrap
+		@media screen and (min-width: 992px)
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		.ay-offer-item
+			box-shadow: 0 0 10px rgba(0 ,0,0 , .2)
+			width: 100%
+			text-align: center
+			background-color: #fff
+			max-width: 435px
+			margin: 0 auto 55px
+			@media screen and (min-width: 992px)
+				margin: 0
+				width: calc((100% - 100px) / 3.001)
+			.thumbnail	
+				margin: 0px
+				.ay-showcase-imgbox
+					width: 100%
+					overflow: hidden
+
+					.ay-showcase-imgbox__inner
+						width: 100%
+						padding-top: 100%
+						position: relative
+
+						&.ay-showcase-imgbox__inner--4-3
+							padding-top: calc(100% * 3 / 4)
+						&.ay-showcase-imgbox__inner--16-9
+							padding-top: calc(100% * 9 / 16)
+							.ay-showcase-image
+								position: absolute
+								top: 0
+								left: 0
+								width: 100%
+								height: 100%
+								background-size: cover
+								background-position: center
+
+
+
+				.thumbnail__info
+					padding: 9% 9% 50px
+					position: relative
+					z-index: 1
+					background-color: #fff
+					a
+						display: inline-block
+						margin: 0 0 25px
+						position: relative
+						color: #000
+					p 
+						margin: 0px
+						font-size: 16px
+						color: #000
+						letter-spacing: 0
+	
+
