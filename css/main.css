@@ -4,7 +4,7 @@
 /*-------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -18,7 +18,7 @@ html {
 }
 
 /* Sections
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * Remove the margin in all browsers.
  */
@@ -43,7 +43,7 @@ h1 {
 }
 
 /* Grouping content
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -71,7 +71,7 @@ pre {
 }
 
 /* Text-level semantics
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -137,7 +137,7 @@ sup {
 }
 
 /* Embedded content
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -146,7 +146,7 @@ img {
 }
 
 /* Forms
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -293,7 +293,7 @@ textarea {
 }
 
 /* Interactive
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -309,7 +309,7 @@ summary {
 }
 
 /* Misc
-   @mixin ========================================================================= */
+ @mixin ========================================================================= */
 /**
  * Add the correct display in IE 10+.
  */
@@ -460,13 +460,13 @@ template {
 
 @-webkit-keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
   }
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
   100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
   }
+  -webkit-transform: rotate(359deg);
+  transform: rotate(359deg);
 }
 
 @keyframes fa-spin {
@@ -7406,22 +7406,6 @@ html {
   padding-top: 100%;
 }
 
-.imgBox-fit {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.imgBox-fit .image {
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: inherit;
-}
-
 .image {
   width: 100%;
   display: block;
@@ -7465,7 +7449,7 @@ html {
   width: 100%;
 }
 
-.form input {
+.form input[type="text"], .form input[type="tel"], .form input[type="email"] {
   padding: 8px 16px;
   display: inline-block;
   border: 1px solid #cdcdcd;
@@ -7496,7 +7480,7 @@ html {
   background: #fff;
 }
 
-.form input {
+.form input[type="text"]:focus, .form input[type="tel"]:focus, .form input[type="email"]:focus {
   outline: 0;
   border: 1px solid #cdcdcd;
 }
@@ -7588,7 +7572,7 @@ footer .copyright {
 
 footer .copyright a {
   color: #fff;
-  color-text-decoration: none;
+  text-decoration: none;
 }
 
 /*-------------------------*/
@@ -8494,7 +8478,7 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
   letter-spacing: 0;
   padding: 0 0 18px;
   font-weight: 400;
-  font-weight-white-space: nowrap;
+  white-space: nowrap;
 }
 
 .lpc-plans .lpc-featured-plan-container .lpc-featured-plan-block-2 .lpc-featured-plan-block .lpc-plan.lpc-plan-free .lpc-plan-header .lpc-plan-header-subtitle {
@@ -8577,7 +8561,9 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  justify-content-align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media (min-width: 576px) {
@@ -8750,7 +8736,7 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display-margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .lpc-plans .lpc-plans-table-wrapper .lpc-plans-table-container .lpc-plans-table .lpc-plan.lpc-plan-premium .eJVKXi .dBEucF .fAyluN {
@@ -9354,7 +9340,7 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
   margin-bottom: 10px;
   text-align: center;
   font-size: 1.5rem;
-  font-size-font-weight: 400;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 601px) {
@@ -9367,7 +9353,7 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
   margin: 0px;
   margin-bottom: 24px;
   font-size: 14px;
-  font-size-font-weight: 400;
+  font-weight: 400;
 }
 
 /*-------------------------*/
