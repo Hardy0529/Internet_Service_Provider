@@ -19,7 +19,7 @@
     position: absolute
     top: 0
     left: 0
-    z-index: -1
+    z-index: 1
     pointer-events: none
   &::before
     background: #010c2b
@@ -32,7 +32,7 @@
     position: absolute
     top: 0
     left: 0
-    z-index: -1
+    z-index: 2
     pointer-events: none
   &::after
     background: url(../assets//banner/original.png)
@@ -55,6 +55,7 @@
       margin-top: 0
 
   .jumbotron-info-wrap
+    z-index: 3
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -75,6 +76,7 @@
       padding-bottom: 0
 
   .jumbotron-img-animate
+    z-index: 4
     position: relative
     margin-top: 0
     height: 0
@@ -113,18 +115,16 @@
         text-align: left
       span
         font-weight: bold
-      .typing-text,.typed-cursor
-        color: #0061FF
-      .typed-cursor
-        opacity: 1
-        color: #fff
-        font-weight: 500
-        position: absolute
-        right: -8px
-        top: -3px
-        @media screen and (min-width: 768px)
-          right: -12px
-          top: -3 px
+      .typing-text
+        display: inline
+        &::before
+          content: "|"
+          position: absolute
+          right: -6px
+          bottom: 0px
+          @media screen and (min-width: 768px)
+            right: -12px
+            bottom: 4px
     h2
       font-size: 106.25%
       margin-bottom: 15px
@@ -135,7 +135,7 @@
       text-align: center
       @media screen and (min-width: 768px)
         text-align: left
-       
+
       .btn
         @media screen and (max-width: 767px)
           margin-right: 8px

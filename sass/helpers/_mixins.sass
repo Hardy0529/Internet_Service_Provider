@@ -1,6 +1,6 @@
 // 1. 布局
 // 水平垂直置中-translate
-@mixin center 
+@mixin center
   position: absolute
   left: 50%
   top: 50%
@@ -10,7 +10,7 @@
   transform: translate(-50%, -50%)
 
 // 彈性盒
-@mixin flex 
+@mixin flex
   display: -webkit-box
   display: -webkit-flex
   display: -moz-box
@@ -23,10 +23,9 @@
   align-items: center
   justify-content: center
 
-
 // 遮罩效果
 @mixin matte_effect
-  &::before 
+  &::before
     content: ""
     position: absolute
     top: 0px
@@ -38,9 +37,9 @@
     transition: 0.3s
 
 // 清除浮动
-@mixin clearfix 
+@mixin clearfix
   *zoom: 1
-  &:after 
+  &:after
     content: ""
     display: block
     height: 0
@@ -48,24 +47,20 @@
     clear: both
 
 // IE盒模型
-@mixin border-box 
+@mixin border-box
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
 
 // 尺寸
-@mixin size($w, $h) 
+@mixin size($w, $h)
   width: $w
   height: $h
 
 // 2. 文本
 // 禁止文本被選擇
-@mixin user-select 
+@mixin user-select
   -webkit-user-select: none
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
-
-
-
-

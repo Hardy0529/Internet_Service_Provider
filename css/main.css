@@ -7962,23 +7962,21 @@ footer .copyright a {
   font-weight: bold;
 }
 
-.jumbotron .jumbotron-content h1 .typing-text, .jumbotron .jumbotron-content h1 .typed-cursor {
-  color: #0061FF;
+.jumbotron .jumbotron-content h1 .typing-text {
+  display: inline;
 }
 
-.jumbotron .jumbotron-content h1 .typed-cursor {
-  opacity: 1;
-  color: #fff;
-  font-weight: 500;
+.jumbotron .jumbotron-content h1 .typing-text::before {
+  content: "|";
   position: absolute;
-  right: -8px;
-  top: -3px;
+  right: -6px;
+  bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
-  .jumbotron .jumbotron-content h1 .typed-cursor {
+  .jumbotron .jumbotron-content h1 .typing-text::before {
     right: -12px;
-    top: -3 px;
+    bottom: 4px;
   }
 }
 
