@@ -59,7 +59,7 @@ header{
   }
   @media (min-width: 768px){
     .nav-brand a {
-      padding: 24px 24px 24px 24px;
+      padding: 24px 20px 24px 20px;
     }
   }
   
