@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>數位行銷有限公司</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- CSS -->
 	<link rel="stylesheet" href="./css/sm-core-css.css">
 	<link rel="stylesheet" href="./css/sm-style.css">
 	<link rel="stylesheet" href="./css/style.css">
@@ -166,8 +168,6 @@
 	
 		
 
-
-
 		<!-- Start work -->
 		<section class="swiper-Wrapper">
 			<div class="swiper-container">
@@ -186,6 +186,7 @@
 		
 		</section>
 		<!-- End work -->
+
 
 
 		<!-- Start serviceUs -->
@@ -245,9 +246,6 @@
 		<!-- End serviceUs -->
 
 
-
-
-
 		<!-- Start ay-service-wrap  -->
 		<section class="ay-service-wrap custom-width">
 			<div class="intro-title">
@@ -300,8 +298,6 @@
 
 
 
-
-
 		<section class="ay-team custom-width">
 			<div class="ay-img">
 				<img src="./assets/56612207-0-BDs-3.png" alt="開店顧問團隊">
@@ -318,8 +314,6 @@
 				</div>
 			</div>
 		</section>
-
-
 
 
 
@@ -391,8 +385,6 @@
 		<!-- End  Ay showcase  -->
 
 
-
-
 		<!-- Start Footer -->
 		<footer>
 			<div class="container">
@@ -441,65 +433,12 @@
 		</footer>
 		<!-- End Footer -->
 
-
-
-
-
 	</div>
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/jquery.smartmenus.js"></script>
 	<script src="./js/custom.js"></script>
 	
-	<script type="text/javascript">//<![CDATA[
-
-
-		// SmartMenus init
-
-		$(function () {
-			$('#main-menu').smartmenus({
-				subMenusSubOffsetX: 1,
-				subMenusSubOffsetY: -8
-			});
-		});
-
-		// SmartMenus mobile menu toggle button
-		$(function () {
-			var $mainMenuState = $('#main-menu-state');
-			if ($mainMenuState.length) {
-				// animate mobile menu
-				$mainMenuState.change(function (e) {
-					var $menu = $('#main-menu');
-					if (this.checked) {
-						$menu.hide().slideDown(250, function () { $menu.css('display', ''); });
-					} else {
-						$menu.show().slideUp(250, function () { $menu.css('display', ''); });
-					}
-				});
-				// hide mobile menu beforeunload
-				$(window).bind('beforeunload unload', function () {
-					if ($mainMenuState[0].checked) {
-						$mainMenuState[0].click();
-					}
-				});
-			}
-		});
-
-
-	  //]]></script>
-
-	<script>
-		// tell the embed parent frame the height of the content
-		if (window.parent && window.parent.parent) {
-			window.parent.parent.postMessage(["resultsFrame", {
-				height: document.body.getBoundingClientRect().height,
-				slug: "oxe40pat"
-			}], "*")
-		}
-
-		// always overwrite window.name, in case users try to set it manually
-		window.name = "result"
-	</script>
-
+	
 </body>
 
 </html>

@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>數位行銷有限公司</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- CSS -->
 	<link rel="stylesheet" href="./css/sm-core-css.css">
 	<link rel="stylesheet" href="./css/sm-style.css">
 	<link rel="stylesheet" href="./css/style.css">
@@ -165,6 +167,7 @@
 		</header>
 		<!-- Start header -->
 		
+
 
 		<!-- Start Plans -->
 		<section class="lpc-plans lpc-plans-five ">
@@ -477,7 +480,6 @@
 
 
 
-
 		<!-- Start Parallax Scrolling -->
 		<section class="parallax">
 			<div class="container">
@@ -545,66 +547,12 @@
 		</footer>
 		<!-- End Footer -->
 
-
-
-
-
-
-
 	</div>
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/jquery.smartmenus.js"></script>
 	<script src="./js/custom.js"></script>
 	
-	<script type="text/javascript">//<![CDATA[
 
-
-		// SmartMenus init
-
-		$(function () {
-			$('#main-menu').smartmenus({
-				subMenusSubOffsetX: 1,
-				subMenusSubOffsetY: -8
-			});
-		});
-
-		// SmartMenus mobile menu toggle button
-		$(function () {
-			var $mainMenuState = $('#main-menu-state');
-			if ($mainMenuState.length) {
-				// animate mobile menu
-				$mainMenuState.change(function (e) {
-					var $menu = $('#main-menu');
-					if (this.checked) {
-						$menu.hide().slideDown(250, function () { $menu.css('display', ''); });
-					} else {
-						$menu.show().slideUp(250, function () { $menu.css('display', ''); });
-					}
-				});
-				// hide mobile menu beforeunload
-				$(window).bind('beforeunload unload', function () {
-					if ($mainMenuState[0].checked) {
-						$mainMenuState[0].click();
-					}
-				});
-			}
-		});
-
-
-	  //]]></script>
-
-	<script>
-		// tell the embed parent frame the height of the content
-		if (window.parent && window.parent.parent) {
-			window.parent.parent.postMessage(["resultsFrame", {
-				height: document.body.getBoundingClientRect().height,
-				slug: "oxe40pat"
-			}], "*")
-		}
-
-		// always overwrite window.name, in case users try to set it manually
-		window.name = "result"
-	</script>
 
 </body>
 
