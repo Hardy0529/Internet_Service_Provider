@@ -47,12 +47,19 @@
 .custom-width
 	padding-left: 20px
 	padding-right: 20px
+
 	@media screen and (min-width: 761px)
+		padding-left: 35px
+		padding-right: 35px
+	@media screen and (min-width: 992px)
 		padding-left: 25px
 		padding-right: 25px
 	@media screen and (min-width: 1121px)
 		padding-left: calc(0.1975 * 100vw - 196.2px)
 		padding-right: calc(0.1975 * 100vw - 196.2px)
+	@media screen and (min-width: 1920px)
+		padding-left: calc((100vw - 1600px) / 2 + 30px)
+		padding-right: calc((100vw - 1600px) / 2 + 30px)
 
 .container-info
 	max-width: 1248px

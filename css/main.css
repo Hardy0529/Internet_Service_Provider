@@ -9605,6 +9605,13 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
 
 @media screen and (min-width: 761px) {
   .custom-width {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .custom-width {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -9614,6 +9621,13 @@ section.block-hero .block-hero-closing .block-hero-closing-wpcom-logo {
   .custom-width {
     padding-left: calc(0.1975 * 100vw - 196.2px);
     padding-right: calc(0.1975 * 100vw - 196.2px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .custom-width {
+    padding-left: calc((100vw - 1600px) / 2 + 30px);
+    padding-right: calc((100vw - 1600px) / 2 + 30px);
   }
 }
 
